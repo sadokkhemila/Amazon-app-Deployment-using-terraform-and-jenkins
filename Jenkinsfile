@@ -15,7 +15,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/Aakibgithuber/Amazon-app-Deployment-using-terraform-and-jenkins.git'
+                git branch: 'main', url: 'https://github.com/sadokkhemila/Amazon-app-Deployment-using-terraform-and-jenkins.git'
             }
         }
         stage("Sonarqube Analysis "){

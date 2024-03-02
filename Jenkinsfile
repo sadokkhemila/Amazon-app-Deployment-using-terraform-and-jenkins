@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('checkout from git ') {
             steps {
-                echo 'Hello World'
+                git branch: 'main' , URL: 'https://github.com/Aakibgithuber/Amazon-app-Deployment-using-terraform-and-jenkins.git'
             }
         }
     }
